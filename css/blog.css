@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: green;
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  /*align-content: center;*/
+  /*align-items: flex-start;*/
+  /*flex-wrap: wrap;*/
+  /*flex-direction: row;*/
+  /*padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3em;
+  padding-right: 3em;*/
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  /*order: 3;*/
+}
+
+header i.fa {
+  font-size: 1.5em;
+  /*order: 1;*/
+}
+
+.hola {
+  /*order: 2;*/
+}
+
+div {
+  background-color: red;
+  margin: 10px;
+}

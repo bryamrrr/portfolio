@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox</title>
+  <style>
+    body { margin: 0; }
+    section {
+      background-color: yellow;
+      overflow: hidden;
+      height: 1000px;
+    }
+    article {
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      margin: 20px;
+      height: 300px;
+      flex-grow: 100;
+      /*width: 300px;*/
+    }
+
+    .contenedor-padre {
+      display: flex;
+      /*flex-wrap: wrap;*/
+      /*align-items: flex-end;*/
+      /*justify-content: space-around;*/
+      /*flex-direction: column-reverse;*/
+    }
+    .alta-prioridad {
+      order: 1;
+      flex-grow: 200;
+      /*flex-grow: 2;*/
+    }
+    .baja-prioridad {
+      order: 2;
+      /*flex-grow: 1;*/
+    }
+  </style>
+</head>
+<body>
+  <section class="contenedor-padre">
+    <article class="caja-hija baja-prioridad">1</article>
+    <article class="caja-hija baja-prioridad">2</article>
+    <article class="caja-hija baja-prioridad">3</article>
+    <article class="caja-hija baja-prioridad">4</article>
+    <article class="caja-hija alta-prioridad">5</article>
+  </section>
+</body>
+</html>
