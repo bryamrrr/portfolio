@@ -7,8 +7,8 @@ body {
 header {
   background-color: green;
   padding: 1em 3em;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
   /*align-content: center;*/
   /*align-items: flex-start;*/
   /*flex-wrap: wrap;*/
@@ -28,11 +28,6 @@ h1 {
 
 header i.fa {
   font-size: 1.5em;
-  /*order: 1;*/
-}
-
-.hola {
-  /*order: 2;*/
 }
 
 div {
