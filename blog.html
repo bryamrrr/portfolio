@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta description="Este es mi blog personal">
+  <meta name="viewport" content="width=device-width">
   <title>Blog</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/blog.css">
@@ -16,15 +17,47 @@
   </header>
   <nav>
     <ul>
-      <li>item 1</li>
-      <li>item 2</li>
-      <li>item 3</li>
+      <li class="activo">Inicio</li>
+      <li>Tecnología</li>
+      <li>Emprendimiento</li>
+      <li>Programación</li>
     </ul>
   </nav>
-  <section>
+  <section class="principal-blog">
     <h2>Temas que me apasionan</h2>
     <p>Un espacio dedicado a escribir de lo que pienso</p>
-    <img src="#" alt="" />
+    <div class="linea"></div>
+  </section>
+  <section class="articulos">
+    <h3>
+      Populares <i class="fa fa-chevron-right"></i>
+    </h3>
+    <article class="destacado">
+      <figure>
+        <img src="images/article.png" alt="" />
+      </figure>
+      <div>
+        <h4>Título del post principal</h4>
+        <p>Párrafo que describe el artículo brevemente</p>
+      </div>
+    </article>
+    <div class="otros-articulos">
+      <article>
+        <img src="images/article.png" alt="">
+        <h5>titulo del post</h5>
+        <p>Parrafo de prueba</p>
+      </article>
+      <article>
+        <img src="images/article.png" alt="">
+        <h5>titulo del post</h5>
+        <p>Parrafo de prueba</p>
+      </article>
+      <article>
+        <img src="images/article.png" alt="">
+        <h5>titulo del post</h5>
+        <p>Parrafo de prueba</p>
+      </article>
+    </div>
   </section>
 </body>
 </html>
