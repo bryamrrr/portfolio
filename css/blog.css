@@ -30,7 +30,10 @@ header i.fa {
 
 .principal-blog {
   background-image: url(../images/main.jpeg);
-  padding: 4em 3em 8em;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 4em 0 8em;
+  margin: 0 3em;
 }
 
 .principal-blog h2 {
@@ -47,7 +50,7 @@ header i.fa {
   background-color: #DDD;
   margin-left: 0;
   margin-top: 100px;
-  width: 400px;
+  max-width: 400px;
   height: 1px;
 }
 
@@ -61,13 +64,21 @@ nav ul {
   border-top: 1px solid #DDD;
   border-bottom: 1px solid #DDD;
   display: flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
   list-style-type: none;
   padding: 1em 0;
   margin: 0 3em;
+  overflow-x: scroll;
   /*margin-left: 3em;
   margin-right: 3em;
   margin-top: 0;
   margin-bottom: 0;*/
+}
+
+nav ul::-webkit-scrollbar {
+  display: none;
 }
 
 nav li {
@@ -101,7 +112,7 @@ nav li.activo {
 }
 
 .destacado img {
-  width: 500px;
+  width: 100%;
 }
 
 .destacado h4 {
@@ -128,32 +139,32 @@ nav li.activo {
   flex-grow: 2;
 }
 
+.otros-articulos article:last-of-type {
+  margin-right: 0;
+}
+
 /*- Desktop first*/
 @media (max-width: 768px) {
-  body {
-    background-color: red;
+  /*.principal-blog {
+    background-image: url();
+  }*/
+  h4 {
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    background-color: blue;
+  .destacado, .otros-articulos {
+    flex-direction: column;
   }
-}
 
-
-
-
-/*- Mobile first*/
-@media (min-width: 768px) {
-  body {
-    background-color: red;
+  .destacado figure {
+    margin: 0;
   }
-}
 
-@media (min-width: 1024px) {
-  body {
-    background-color: red;
+  .otros-articulos article {
+    margin-right: 0;
+    margin-bottom: 2em;
   }
 }
 
